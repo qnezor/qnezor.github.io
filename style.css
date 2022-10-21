@@ -40,16 +40,27 @@ body {
 	display: flex;
 	align-items: center;
 }
-.cl {
+.navg-icon-inv {
 	filter: invert(1);
 	height: 30px;
 	width: 30px;
 	padding: 0px 22px;
 }
-.cl2 {
+.navg-icon {
 	height: 30px;
 	width: 30px;
 	padding: 0px 22px;
+}
+.navg-lang {
+	height: 40px;
+	width: 30px;
+	padding: 7px 15px;
+}
+.navg-lang-gray {
+	height: 40px;
+	width: 30px;
+	padding: 7px 15px;
+	filter: grayscale(100%);
 }
 .bw-none {
 	background-color: white;
@@ -57,6 +68,13 @@ body {
 	text-align: center;
 	color: black;
     text-decoration: none;
+}
+.bw-pd2 {
+	background-color: white;
+	font-family: Ubuntu;
+	text-align: center;
+	color: black;
+	padding: 2px;
 }
 .bw-pd5-0 {
 	background-color: white;
@@ -113,5 +131,5 @@ body {
 }
 @font-face {
   font-family: 'Ubuntu';
-  src: url(https://github.com/Qnezor/bw-css/blob/main/Ubuntu.ttf);
+  src: url(https://github.com/Qnezor/bw-css/fonts/blob/main/Ubuntu.ttf);
 }

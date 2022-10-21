@@ -94,14 +94,14 @@ text-align: center;
 display: flex;
 align-items: center;
 }
-.navg {
+.navigation {
     text-align: center;
 	margin-top: 10px;
 }
-.zakr {
-      border-radius: 10px;
+.zakruglenie {
+    border-radius: 10px;
 }
 @font-face {
   font-family: 'Ubuntu';
-  src: url(files/fonts/Ubuntu.ttf);
+  src: url(https://github.com/Qnezor/bw-css/blob/main/Ubuntu.ttf);
 }

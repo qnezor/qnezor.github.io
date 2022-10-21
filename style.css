@@ -94,6 +94,18 @@ text-align: center;
 display: flex;
 align-items: center;
 }
+.ctr-pd30 {
+	font-family: Ubuntu;
+	text-align: center;
+	color: white;
+    padding: 30px 0px;
+}
+.ctr-pd100 {
+	font-family: Ubuntu;
+	text-align: center;
+	color: white;
+    padding: 100px 0px;
+}
 .margin-10px {
     text-align: center;
 	margin-top: 10px;

@@ -9,146 +9,62 @@ body {
 	background-color: black;
 }
 
-.menu {
-	text-align: center;
-	text-decoration: none;
-	background-color: white;
-	color: black;
-	display: inline-block;
-	padding: 5px 5px;
-	font-family: Ubuntu;
-	border-radius: 10px;
-	border-color: black;
-	border-style: solid;
+img.csp {
+	animation-duration: 4s;
+	animation-name: repaint;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
-.menu2 {
-	text-align: center;
-	text-decoration: none;
-	background-color: rgb(255, 105, 180);
-	color: black;
-	display: inline-block;
-	padding: 5px 5px;
-	font-family: Ubuntu;
-	border-radius: 10px;
-	border-color: black;
-	border-style: solid;
+mark.anim {
+	animation-duration: 4s;
+	animation-name: repaint1;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
-.header {
-	padding: 20px 25px;
-	height: 60px;
+@keyframes repaint {
+	0% {
+		border: 4px yellow solid;
+	}
+
+	25% {
+		border: 4px rgb(255, 0, 149) solid;
+	}
+
+	50% {
+		border: 4px red solid;
+	}
+
+	75% {
+		border: 4px rgb(0, 217, 255) solid;
+	}
+
+	100% {
+		border: 4px rgb(132, 0, 255) solid;
+	}
 }
 
-.header2 {
-	text-align: center;
-	display: flex;
-	align-items: center;
-}
+@keyframes repaint1 {
+	0% {
+		color: yellow; background-color: black;
+	}
 
-.navg-icon-inv {
-	filter: invert(1);
-	height: 30px;
-	width: 30px;
-	padding: 0px 22px;
-}
+	25% {
+		color: rgb(255, 0, 149); background-color: black;
+	}
 
-.navg-icon {
-	height: 30px;
-	width: 30px;
-	padding: 0px 22px;
-}
+	50% {
+		color: red; background-color: black;
+	}
 
-.navg-lang {
-	height: 40px;
-	width: 30px;
-	padding: 7px 15px;
-}
+	75% {
+		color: rgb(0, 217, 255); background-color: black;
+	}
 
-.navg-lang-gray {
-	height: 40px;
-	width: 30px;
-	padding: 7px 15px;
-	filter: grayscale(100%);
-}
-
-.bw-none {
-	background-color: white;
-	font-family: Ubuntu;
-	text-align: center;
-	color: black;
-	text-decoration: none;
-}
-
-.bw-pd2 {
-	background-color: white;
-	font-family: Ubuntu;
-	text-align: center;
-	color: black;
-	padding: 2px;
-}
-
-.bw-pd5-0 {
-	background-color: white;
-	font-family: Ubuntu;
-	text-align: center;
-	color: black;
-	padding: 5px 0px;
-}
-
-.bw-pd2-10 {
-	text-align: center;
-	font-family: Ubuntu;
-	background-color: white;
-	color: black;
-	padding: 2x 10px;
-}
-
-.ctr-white {
-	font-family: Ubuntu;
-	text-align: center;
-	color: white;
-}
-
-.ctr-red {
-	font-family: Ubuntu;
-	text-align: center;
-	color: red;
-}
-
-.left-ctr-pd0-25-15 {
-	text-align: left;
-	padding: 0px 25px 15px;
-}
-
-.ctr-pd5-0 {
-	font-family: Ubuntu;
-	text-align: center;
-	color: white;
-	padding: 5px 0px;
-}
-
-.ctr-pd30-0 {
-	font-family: Ubuntu;
-	text-align: center;
-	color: white;
-	padding: 30px 0px;
-}
-
-.ctr-pd100-0 {
-	font-family: Ubuntu;
-	text-align: center;
-	color: white;
-	padding: 100px 0px;
-}
-
-.margin-10px {
-	text-align: center;
-	margin-top: 10px;
-}
-
-.zakruglenie {
-	border-radius: 10px;
+	100% {
+		color: rgb(132, 0, 255); background-color: black;
+	}
 }
 
 @font-face {

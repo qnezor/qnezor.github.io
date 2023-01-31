@@ -4,17 +4,18 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" sizes="192x192" href="files/pic/qnezor.png">
+	<link rel="icon" sizes="192x192" href="files/pic/qnezor.jpeg">
 	<title>qnezor</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <style>
-	.ots {
-		padding-bottom: 15px;
-		font-family: Ubuntu;
-		text-align: center;
-		color: white;
+	.csp {
+		width: 200px;
+		height: 200px;
+		border-radius: 10px;
+		margin: 10px 25px
 	}
+
 
 	.nameot {
 		background-color: white;
@@ -22,64 +23,49 @@
 		text-align: center;
 		color: black;
 		text-decoration: none;
-		padding: 0px 15px;
+		padding: 0px 1px;
+		margin: 10px;
 		border-radius: 5px;
+		font-size: 25px;
 	}
 
 	.nameot:hover {
-		background-color: black;
-		color: white;
+		animation: rev .5s forwards;
 	}
 
-	.ctr-white-sp {
-		font-family: Ubuntu;
-		text-align: center;
-		color: white;
-	}
+	@keyframes rev {
+		0% {
+			filter: invert(0);
+		}
 
-	.ctr-white-sp:hover {
-		color: red;
+		100% {
+			filter: invert(1);
+		}
 	}
 </style>
 
 <body>
-	<h1 class="bw-pd5-0">qnezor</h1>
-	<div class="ctr-white">
-		<img style="border-radius:20px; padding-top:15px" src="files/pic/qnezor.png" alt="qnezor" width="220px"
-			height="220px">
+	<div style="justify-content: center; display: flex; align-items: center;">
+		<img class="csp" src="files/pic/qnezor.jpeg" alt="qnezor">
+		<h1 style="color: white; margin: 0px 25px; font-family: ubuntu;">クネゾール <mark class="anim"
+				style="font-size: 40px">/</mark> qnezor</h1>
 	</div>
-	<h2 class="ots" style="padding-top:15px;">
-		<a class="nameot" href="https://vk.com/qnezor" target="_blank">VK</a>
-		<a class="nameot" href="https://openvk.su/qnezor" target="_blank">OpenVK</a>
-	</h2>
-	<h2 class="ots">
-		<a class="nameot" href="https://twitter.com/qnezor" target="_blank">Twitter</a>
-		<a class="nameot" href="https://reddit.com/u/qnezor" target="_blank">Reddit</a>
-	</h2>
-	<h2 class="ots">
-		<a class="nameot" href="https://youtube.com/@qnezor" target="_blank">Youtube</a>
-		<a class="nameot" href="https://twitch.tv/qnezor" target="_blank">Twitch</a>
-		<a class="nameot" href="https://tiktok.com/@qnezor" target="_blank">TikTok</a>
-	</h2>
-	<h2 class="ots">
+	<div style="text-align: center; margin: 20px 0px">
 		<a class="nameot" href="https://steamcommunity.com/id/qnezor" target="_blank">Steam</a>
 		<a class="nameot" href="https://osu.ppy.sh/users/19351756" target="_blank">osu</a>
 		<a class="nameot" href="https://www.gog.com/u/Qnezor" target="_blank">gog</a>
-	</h2>
-	<h2 style="padding-top:30px;text-align:center;padding-bottom:10px;"><mark class="bw-none"
-			style="border-radius: 5px;">other projects</mark></h2>
-	<nav class="ots">
-		<a class="ctr-white-sp" style="font-size:20px;padding:0px 5px"
-			href="https://steamcommunity.com/groups/808_drums" target="_blank">Drums 808</a>
-		<a class="ctr-white-sp" style="font-size:20px;padding:0px 5px" href="https://ult11.github.io"
-			target="_blank">ult11</a>
-	</nav>
-	<h2 style="padding-top:20px;text-align:center;padding-bottom:10px;"><mark class="bw-none"
-			style="border-radius: 5px;">developments</mark></h2>
-	<nav class="ots">
-		<a class="ctr-white-sp" style="font-size:20px;" href="https://qnezor.github.io/ezback"
-			target="_blank">EzBack</a>
-	</nav>
+	</div>
+	<div style="text-align: center; margin: 20px 0px">
+		<a class="nameot" href="https://youtube.com/@qnezor" target="_blank">Youtube</a>
+		<a class="nameot" href="https://twitch.tv/qnezor" target="_blank">Twitch</a>
+		<a class="nameot" href="https://tiktok.com/@qnezor" target="_blank">TikTok</a>
+	</div>
+	<div style="text-align: center; margin: 20px 0px">
+		<a class="nameot" href="https://vk.com/qnezor" target="_blank">VK</a>
+		<a class="nameot" href="https://openvk.su/qnezor" target="_blank">OpenVK</a>
+		<a class="nameot" href="https://twitter.com/qnezor" target="_blank">Twitter</a>
+		<a class="nameot" href="https://reddit.com/u/qnezor" target="_blank">Reddit</a>
+	</div>
 </body>
 
 </html>

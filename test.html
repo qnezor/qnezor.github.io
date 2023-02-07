@@ -7,10 +7,129 @@
   <link rel="icon" sizes="192x192" href="https://qnezor.github.io/files/pic/qnezor.jpeg">
   <title>TEST</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="test.css">
 </head>
-  
+
 <body>
-      <input type="text" value="" placeholder="Search" autofocus> 
+  <!-- считашки квадрата -->
+  <div style="text-align: center;">
+    <h2 style="font-family: ubuntu; color: white;">считашки квадрата</h2>
+    <input type="text" value="" placeholder="число 1" autofocus id="1" style="margin: 10px;">
+    <div>
+      <button id="2s" onclick="schitachki_2s()">площадь</button>
+      <button id="2p" onclick="schitachki_2p()">периметр</button>
+    </div>
+    <h1 style="color: white; font-family: ubuntu;" id="result">_</h1>
+  </div>
+  <hr style="border: 3px white solid; margin-top: 20px;">
+
+  <!-- считашки прямоугольника -->
+  <div style="text-align: center;">
+    <h2 style="font-family: ubuntu; color: white;">считашки прямоугольника</h2>
+    <input type="text" value="" placeholder="число 1" autofocus id="11" style="margin: 10px;">
+    <input type="text" value="" placeholder="число 2" autofocus id="21" style="margin: 10px;">
+    <div>
+      <button id="2s" onclick="schitachki_4s()">площадь</button>
+      <button id="2p" onclick="schitachki_4p()">периметр</button>
+    </div>
+    <h1 style="color: white; font-family: ubuntu;" id="result1">_</h1>
+  </div>
+  <hr style="border: 3px white solid; margin-top: 20px;">
+
+  <!-- считашки круга -->
+  <div style="text-align: center;">
+    <h2 style="font-family: ubuntu; color: white;">считашки круга</h2>
+    <input type="text" value="" placeholder="число 1" autofocus id="12" style="margin: 10px;">
+    <div>
+      <button id="2s" onclick="schitachki_krugs()">площадь</button>
+      <button id="2p" onclick="schitachki_krugp()">длина</button>
+    </div>
+    <h1 style="color: white; font-family: ubuntu;" id="result2">_</h1>
+    <p style="font-family: ubuntu; color: white;">(результат примерный)</p>
+  </div>
+  <hr style="border: 3px white solid; margin-top: 20px;">
+
+  <!-- считашки треугольника -->
+  <div style="text-align: center;">
+    <h2 style="font-family: ubuntu; color: white;">считашки треугольника</h2>
+    <input type="text" value="" placeholder="число 1" autofocus id="13" style="margin: 10px;">
+    <input type="text" value="" placeholder="число 2" autofocus id="23" style="margin: 10px;">
+    <input type="text" value="" placeholder="число 3" autofocus id="33" style="margin: 10px;">
+    <div>
+      <button id="2s" onclick="schitachki_3s()">расщитать</button>
+    </div>
+    <h1 style="color: white; font-family: ubuntu;">периметр: <mark style="color: white; font-family: ubuntu; background-color: black;" id="result31">_</mark></h1>
+    <h1 style="color: white; font-family: ubuntu;">площадь: <mark style="color: white; font-family: ubuntu; background-color: black;" id="result32">_</mark></h1>
+  </div>
+  <hr style="border: 3px white solid; margin-top: 20px;">
 </body>
 
 </html>
+
+<script>
+
+  function schitachki_2s() {
+
+    var num1 = Number(document.getElementById("1").value);
+    var result = num1 * num1;
+
+    document.getElementById("result").innerHTML = result;
+  }
+
+  function schitachki_2p() {
+
+    var num1 = Number(document.getElementById("1").value);
+    var result = num1 * 4;
+
+    document.getElementById("result").innerHTML = result;
+  }
+
+
+  function schitachki_4s() {
+
+    var num1 = Number(document.getElementById("11").value);
+    var num2 = Number(document.getElementById("21").value);
+    var result = num1 * num2;
+
+    document.getElementById("result1").innerHTML = result;
+  }
+
+  function schitachki_4p() {
+
+    var num1 = Number(document.getElementById("11").value);
+    var num2 = Number(document.getElementById("21").value);
+    var result = num1 + num1 + num2 + num2;
+
+    document.getElementById("result1").innerHTML = result;
+  }
+
+  function schitachki_krugs() {
+
+    var num1 = Number(document.getElementById("12").value);
+    var result = (num1 * num1) * 3;
+
+    document.getElementById("result2").innerHTML = result;
+  }
+
+  function schitachki_krugp() {
+
+    var num1 = Number(document.getElementById("12").value);
+    var result = 2 * 3 * num1;
+
+    document.getElementById("result2").innerHTML = result;
+  }
+
+  function schitachki_3s() {
+
+    var num1 = Number(document.getElementById("13").value);
+    var num2 = Number(document.getElementById("23").value);
+    var num3 = Number(document.getElementById("33").value);
+    var result1 = (num1 + num2 + num3) / 2;
+    var result2 = Math.sqrt(result1 * (result1 - num1) * (result1 - num2) * (result1 - num3));
+
+    document.getElementById("result31").innerHTML = result1;
+    document.getElementById("result32").innerHTML = result2;
+  }
+
+
+</script>

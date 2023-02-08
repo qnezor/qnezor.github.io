@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" sizes="192x192" href="https://qnezor.github.io/files/pic/qnezor.jpeg">
+  <title>считашки номер 2</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="test.css">
+</head>
+
+<style>
+  body {
+    background-color: black;
+  }
+</style>
+
+<body>
+  <!-- считашки квадратного уравнения -->
+  <div style="text-align: center;">
+    <h2 style="font-family: ubuntu; color: white;">считашки квадратного уравнения</h2>
+    <input type="text" value="" placeholder="a" autofocus id="1" style="margin: 10px;">
+    <input type="text" value="" placeholder="b" autofocus id="2" style="margin: 10px;">
+    <input type="text" value="" placeholder="c" autofocus id="3" style="margin: 10px;">
+    <div>
+      <button id="2s" onclick="schitachki_2s()">начать считашки</button>
+    </div>
+    <h1 style="color: white; font-family: ubuntu;">D=<mark style="background-color: black; color: white; font-family: ubuntu;" id="disk">_</mark></h1>
+    <h1 style="color: white; font-family: ubuntu;">x1=<mark style="background-color: black; color: white; font-family: ubuntu;" id="result1">_</mark></h1>
+    <h1 style="color: white; font-family: ubuntu;">x2=<mark style="background-color: black; color: white; font-family: ubuntu;" id="result2">_</mark></h1>
+  </div>
+  </body>
+
+</html>
+
+<script>
+
+  function schitachki_2s() {
+
+    var num1 = Number(document.getElementById("1").value);
+    var num2 = Number(document.getElementById("2").value);
+    var num3 = Number(document.getElementById("3").value);
+    var D1 = (num2 * num2) - 4 * num1 * num3;
+    var D_kor = Math.sqrt(D1);
+    var x1 = (0 - num2 + D_kor) / (2 * num1);
+    var x2 = (0 - num2 - D_kor) / (2 * num1);
+    
+    document.getElementById("disk").innerHTML = D1;
+    document.getElementById("result1").innerHTML = x1;
+    document.getElementById("result2").innerHTML = x2;
+  }
+</script>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" sizes="192x192" href="https://qnezor.github.io/files/pic/qnezor.jpeg">
+  <title>номер 3</title>
+  <link rel="stylesheet" href=".../style.css">
+</head>
+
+<style>
+  label {
+    color: white;
+    font-family: ubuntu;
+  }
+  
+  h2 {
+    color: white;
+    font-family: ubuntu;
+  }
+  
+  mark {
+    color: white;
+    font-family: ubuntu;
+    background-color: black;
+  }
+</style>
+
+<body>
+  <!-- слов -->
+  <div style="justify-content: center; display: flex;">
+    <textarea type="email" id="input" cols="70" onblur="leg_x()"></textarea>
+    <div style="margin: 0px 7px;">
+      <h2>выбор</h2>
+      <div>
+        <input type="checkbox" id="1">
+        <label for="1">слова</label>
+      </div>
+      <div>
+        <input type="checkbox" id="2">
+        <label for="2">символы</label>
+      </div>
+      <div>
+        <input type="checkbox" id="3">
+        <label for="3">без пробелов</label>
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center;">
+    <h2 style="color: white; font-family: ubuntu;">слов: <mark id="words">_</mark></h2>
+    <h2 style="color: white; font-family: ubuntu;">символы: <mark id="symbols">_</mark></h2>
+    <h2 style="color: white; font-family: ubuntu;">без пробелов: <mark id="letters">_</mark></h2>
+  </div>
+  <hr style="border: 1px solid white">
+</body>
+
+<script>
+  function leg_x() {
+    var x = document.getElementById("input").value;
+    z = x.replace(/\s/g, '');
+    var chbox1 = document.getElementById('1');
+    var chbox2 = document.getElementById('2');
+    var chbox3 = document.getElementById('3');
+    var text = x.match(/\S+?\s|\S+?$/g).length;
+    if (chbox1.checked) {
+      document.getElementById("words").innerHTML = text;
+    } else {
+      document.getElementById("words").innerHTML = 'функция не выбрана';
+    }
+    if (chbox2.checked) {
+      document.getElementById("symbols").innerHTML = x.length;
+    } else {
+      document.getElementById("symbols").innerHTML = 'функция не выбрана';
+    }
+    if (chbox3.checked) {
+      document.getElementById("letters").innerHTML = z.length;
+    } else {
+      document.getElementById("letters").innerHTML = 'функция не выбрана';
+    }
+  }
+</script>

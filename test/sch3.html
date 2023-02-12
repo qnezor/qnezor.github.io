@@ -14,12 +14,12 @@
     color: white;
     font-family: ubuntu;
   }
-  
+
   h2 {
     color: white;
     font-family: ubuntu;
   }
-  
+
   mark {
     color: white;
     font-family: ubuntu;
@@ -55,6 +55,8 @@
   <hr style="border: 1px solid white; margin: 5px 0px">
 </body>
 
+</html>
+
 <script>
   function leg_x() {
     var x = document.getElementById("input").value;
@@ -63,16 +65,19 @@
     var chbox2 = document.getElementById('2');
     var chbox3 = document.getElementById('3');
     var text = x.match(/\S+?\s|\S+?$/g).length;
+    
     if (chbox1.checked) {
       document.getElementById("words").innerHTML = text;
     } else {
       document.getElementById("words").innerHTML = 'функция не выбрана';
     }
+
     if (chbox2.checked) {
       document.getElementById("symbols").innerHTML = x.length;
     } else {
       document.getElementById("symbols").innerHTML = 'функция не выбрана';
     }
+    
     if (chbox3.checked) {
       document.getElementById("letters").innerHTML = z.length;
     } else {

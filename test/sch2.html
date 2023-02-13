@@ -33,16 +33,11 @@
   <!-- считашки тройки Пифагора -->
   <div style="text-align: center;">
     <h2 style="font-family: ubuntu; color: white;">считашки тройки Пифагора</h2>
-    <input type="text" value="" placeholder="наибольшее число" autofocus id="pif1" style="margin: 10px;" onblur="leg_x()">
-    <input type="text" value="" placeholder="второе число" autofocus id="pif2" style="margin: 10px;" onblur="leg_x()">
-    <input type="text" value="" placeholder="третье число" autofocus id="pif3" style="margin: 10px;" onblur="leg_x()">
+    <input type="text" value="" placeholder="наибольшее число" autofocus id="pif1" style="margin: 10px;">
+    <input type="text" value="" placeholder="второе число" autofocus id="pif2" style="margin: 10px;">
+    <input type="text" value="" placeholder="третье число" autofocus id="pif3" style="margin: 10px;">
     <div>
       <button id="button" onclick="pifagorus()">начать считашки Пифагора</button>
-      <div style="justify-content: center; display: flex;">
-        <h2 style="color: white; font-family: ubuntu;" id="ab1">_</h2>
-        <h2 style="color: white; font-family: ubuntu;" id="ab2">_</h2>
-        <h2 style="color: white; font-family: ubuntu;" id="ab3">_</h2>
-      </div>
       <h1 style="color: white; font-family: ubuntu;" id="res1">_</h1>
       <h1 style="color: white; font-family: ubuntu;" id="res2">_</h1>
       <h1 style="color: white; font-family: ubuntu;" id="resultpif">_</h1>
@@ -68,10 +63,14 @@
     document.getElementById("result2").innerHTML = x2;
   }
   
-  function leg_x() {
-    var num1 = Number(document.getElementById("pif1").value);
-    var num2 = Number(document.getElementById("pif2").value);
-    var num3 = Number(document.getElementById("pif3").value);
+ 
+  function pifagorus() {
+    
+    var num1 = document.getElementById("pif1").value;
+    var num2 = document.getElementById("pif2").value;
+    var num3 = document.getElementById("pif3").value;
+    var yes = 'всё правильно';
+    var no = 'переделывай';
     var numSort = [num1, num2, num3];
     numSort.sort(function(a, b) {
     return b - a;
@@ -80,18 +79,6 @@
     var num_1 = numSort[0];
     var num_2 = numSort[1];
     var num_3 = numSort[2];
-    document.getElementById("ab1").innerHTML = num_1;
-    document.getElementById("ab2").innerHTML = num_2;
-    document.getElementById("ab3").innerHTML = num_3;
-    }
-  
-  function pifagorus() {
-    
-    var num_1 = document.getElementById("ab1").value;
-    var num_2 = document.getElementById("ab2").value;
-    var num_3 = document.getElementById("ab3").value;
-    var yes = 'всё правильно';
-    var no = 'переделывай';
     
     var sum1 = (num_1 * num_1);
     var sum2 = (num_2 * num_2) + (num_3 * num_3);

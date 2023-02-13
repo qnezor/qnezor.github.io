@@ -40,6 +40,8 @@
       <button id="button" onclick="pifagorus()">начать считашки Пифагора</button>
       <div style="justify-content: center; display: flex;">
         <h2 style="color: white; font-family: ubuntu;" id="ab1">_</h2>
+        <h2 style="color: white; font-family: ubuntu;" id="ab2">_</h2>
+        <h2 style="color: white; font-family: ubuntu;" id="ab3">_</h2>
       </div>
       <h1 style="color: white; font-family: ubuntu;" id="res1">_</h1>
       <h1 style="color: white; font-family: ubuntu;" id="res2">_</h1>
@@ -85,19 +87,14 @@
   
   function pifagorus() {
     
-    var num_1 = Number(document.getElementById("pif1").value);
-    var num_2 = Number(document.getElementById("pif2").value);
-    var num_3 = Number(document.getElementById("pif3").value);
-    var numSort = [num1, num2, num3];
+    var num_1 = Number(document.getElementById("ab1").value);
+    var num_2 = Number(document.getElementById("ab2").value);
+    var num_3 = Number(document.getElementById("ab3").value);
     var yes = 'всё правильно';
     var no = 'переделывай';
     
-    numSort.sort(function(a, b) {
-    return b - a;
-    });
-    
     var sum1 = (num_1 * num_1);
-    var sum2 = (num_2 * num_2) + (num3 * num3);
+    var sum2 = (num_2 * num_2) + (num_3 * num_3);
     document.getElementById("res1").innerHTML = sum1;
     document.getElementById("res2").innerHTML = sum2;
     

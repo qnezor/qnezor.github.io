@@ -74,10 +74,13 @@
     numSort.sort(function(a, b) {
     return b - a;
     });
-    
-    document.getElementById("ab1").innerHTML = num1;
-    document.getElementById("ab2").innerHTML = num2;
-    document.getElementById("ab3").innerHTML = num3;
+
+    var num_1 = numSort[0];
+    var num_2 = numSort[1];
+    var num_3 = numSort[2];
+    document.getElementById("ab1").innerHTML = num_1;
+    document.getElementById("ab2").innerHTML = num_2;
+    document.getElementById("ab3").innerHTML = num_3;
     }
   
   function pifagorus() {

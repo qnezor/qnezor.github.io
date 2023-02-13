@@ -72,6 +72,10 @@
     var yes = 'всё правильно';
     var no = 'переделывай';
     
+    numSort.sort(function(a, b) {
+    return a - b;
+    });
+    
     var sum1 = (num1 * num1);
     var sum2 = (num2 * num2) + (num3 * num3);
     document.getElementById("res1").innerHTML = sum1;

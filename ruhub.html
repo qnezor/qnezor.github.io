@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="192x192" href="files/pic/qnezor.jpeg">
+    <title>ruHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    .baza {
+        transition: .5s;
+    }
+
+    .baza2 {
+        margin: 0px 10px;
+        font-family: ubuntu;
+        transition: .5s;
+    }
+
+    .baza:hover {
+        box-shadow: 0 0 10px 5px grey;
+    }
+
+    .baza2:hover {
+        box-shadow: 0 0 5px 3px grey;
+    }
+
+    .name {
+        font-family: ubuntu;
+        background-color: black;
+        border-radius: 5px;
+        color: white;
+        padding: 3px;
+    }
+</style>
+
+<body style="background-color: white;">
+    <header style="text-align: center;">
+        <h1 style="font-family: ubuntu; margin-top: 5px;"><mark class="name">RU</mark>Hub</h1>
+        <hr style="border: 1px solid rgb(151, 151, 151); margin-top: 5px;">
+    </header>
+    <div style="justify-content: center; display: flex; margin-top: 5px;">
+        <div class="baza2">
+            <video width="300px" height="169px" onclick="this.controls=true" poster="ruhub/preview/preview1.jpg">
+                <source src="https://www.googleapis.com/drive/v3/files/1NB8tmHCLT9mJ9H8cwq5FrJXy0CjX0tJz?alt=media&key=AIzaSyCQbZO3RWqim1sWk1Kasttx0EsZWyjYoV8"
+                    type='video/mp4'>
+            </video>
+            <h3>алигатор катается под грустную <br>музыку</h3>
+            <h5 style="color: rgb(151, 151, 151)">cumмунизм rofls</h5>
+        </div>
+        <div class="baza2">
+            <video width="300px" height="169px" onclick="this.controls=true">
+                <source src="https://drive.google.com/uc?export=download&id=1wpqhtQ_7nAR_jle-Cc2zLyMfTpI834q4"
+                    type='video/mp4'>
+            </video>
+            <h3>Zemen Moment<br>ㅤ</h3>
+            <h5 style="color: rgb(151, 151, 151)">DT rofls</h5>
+        </div>
+        <div class="baza2">
+            <video width="300px" height="169px" onclick="this.controls=true">
+                <source src="https://drive.google.com/uc?export=download&id=1kvfw61vQcMEOn4L4GoMdbMeqdur6IsHE"
+                    type='video/mp4'>
+            </video>
+            <h3>DT Moment<br>ㅤ</h3>
+            <h5 style="color: rgb(151, 151, 151)">DT rofls</h5>
+        </div>
+        <div class="baza2">
+            <video width="300px" height="169px" onclick="this.controls=true" poster="ruhub/preview/preview4.jpg">
+                <source src="https://drive.google.com/uc?export=download&id=1bOqZ7msB0EniUe1wreGHnANji0gcSFPh"
+                    type='video/mp4'>
+            </video>
+            <h3>Бэбэй танцует под ost из <br>Вангеров</h3>
+            <h5 style="color: rgb(151, 151, 151)">Babai rofls</h5>
+        </div>
+    </div>
+</body>
+
+
+
+<script>
+    function video1() {
+        var video = document.getElementById('video');
+        video.addEventListener('click', function () {
+            video.controls = true;
+        }, false);
+    }
+</script>
+
+</html>

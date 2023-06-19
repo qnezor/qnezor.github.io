@@ -1,73 +1,129 @@
 * {
-	margin: 0px;
-	padding: 0px;
-	border: 0px;
-	outline: 0;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0;
 }
 
 body {
-	background-color: black;
+    background-color: #212121;
 }
 
-img.csp {
-	animation-duration: 4s;
-	animation-name: repaint;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0;
 }
 
-mark.anim {
-	animation-duration: 4s;
-	animation-name: repaint1;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+body {
+    background-color: #212121;
 }
 
-@keyframes repaint {
-	0% {
-		border: 4px yellow solid;
-	}
+@media(min-width: 961px) {
+    .card {
+        background-color: #424242;
+        border-radius: 10px;
+        margin: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-	25% {
-		border: 4px rgb(255, 0, 149) solid;
-	}
+    .card_links {
+        background-color: #424242;
+        border-radius: 10px;
+        margin: 10px 20px;
+        width: 212px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-	50% {
-		border: 4px red solid;
-	}
-
-	75% {
-		border: 4px rgb(0, 217, 255) solid;
-	}
-
-	100% {
-		border: 4px rgb(132, 0, 255) solid;
-	}
+    .mainbody {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
-@keyframes repaint1 {
-	0% {
-		color: yellow; background-color: black;
-	}
+@media(max-width:960px) {
 
-	25% {
-		color: rgb(255, 0, 149); background-color: black;
-	}
+    .card {
+        background-color: #424242;
+        border-radius: 10px;
+        margin: 10px 0px;
+        width: 100%;
+    }
 
-	50% {
-		color: red; background-color: black;
-	}
+    .card_links {
+        background-color: #424242;
+        border-radius: 10px;
+        margin: 10px 0px;
+        width: 100%;
+    }
 
-	75% {
-		color: rgb(0, 217, 255); background-color: black;
-	}
+    .mainbody {
+        margin: 0px 10px;
+    }
+}
 
-	100% {
-		color: rgb(132, 0, 255); background-color: black;
-	}
+.uncard {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.name {
+    font-family: ubuntu;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    margin: 0px 5px;
+}
+
+.card .open {
+    text-align: center;
+    margin: 0px 5px;
+    margin-bottom: 3px;
+}
+
+.card .link {
+    font-family: ubuntu;
+    text-decoration: none;
+    color: gold;
+    transition: .5s;
+}
+
+.card_links .link {
+    font-family: ubuntu;
+    text-decoration: none;
+    color: gold;
+    transition: .5s;
+}
+
+.card_links .open {
+    text-align: center;
+    margin: 0px 5px;
+    margin-bottom: 3px;
+}
+
+.card .link:hover {
+    color: white;
+}
+
+.card_links .link:hover {
+    color: white;
+}
+
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(files/fonts/Ubuntu.ttf);
 }
 
 @font-face {
-	font-family: 'Ubuntu';
-	src: url(files/fonts/Ubuntu.ttf);
+    font-family: 'PoiretOne';
+    src: url(files/fonts/Poiretone.ttf);
 }

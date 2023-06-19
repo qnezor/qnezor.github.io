@@ -31,7 +31,7 @@
             <hr style="border-top: 3px solid black;">
             <nav>
                 <button class="br"
-                    style="font-family: Ubuntu; color: red; text-decoration: none; font-size: 120%; padding: 0px 2%;"
+                    style="font-family: Ubuntu; color: red; text-decoration: none; font-size: 120%; padding: 0px 2%; cursor: pointer;"
                     onclick="HideContent1()">Click for Beta release info</button>
                 <hr>
                 <a class="br"
@@ -87,13 +87,14 @@
             </div>
         </div>
     </div>
-    <div style="background-color: rgb(240, 240, 240); height: 950px; width: 100%; display: none; justify-content: center;" id="beta">
+    <div style="background-color: rgb(240, 240, 240); height: 950px; width: 100%; display: none; justify-content: center;"
+        id="beta">
         <header style="background-color: black; text-align: center;">
             <h1 style="font-family: Ubuntu; padding-top: 5px; padding-bottom: 5px; color: white;">EzBack Beta</h1>
             <hr style="border-top: 3px solid white;">
             <nav>
                 <button class="sr"
-                    style="font-family: Ubuntu; color: red; text-decoration: none; font-size: 120%; padding: 0px 2%;"
+                    style="font-family: Ubuntu; color: red; text-decoration: none; font-size: 120%; padding: 0px 2%; cursor: pointer;"
                     onclick="HideContent2()">Click for Stable release info</button>
                 <hr>
                 <a class="sr"
@@ -141,7 +142,8 @@
         </div>
     </div>
 </body>
-<script type="text/javascript">
+
+<script>
     function HideContent1(event) {
         document.getElementById("base").style.display = "none"
         document.getElementById("beta").style.display = "inline-block"

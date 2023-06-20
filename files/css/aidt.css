@@ -16,11 +16,13 @@ a {
 
 .buttons:hover {
     background-color: #f79b32;
-    transform: rotate(15deg) scale(1.15);
+    transform: rotate(3deg) scale(1.07);
 }
 
 @media(min-width: 961px) {
     .buttons {
+        text-align: center;
+        display: block;
         background-color: #f0f0f0;
         user-select: none;
         padding: 5px;
@@ -29,10 +31,18 @@ a {
         margin: 0px 15px;
         transition: .5s;
     }
+
+    .card {
+        text-align: center;
+        width: 315px;
+        margin: 0px 30px;
+    }
 }
 
 @media(max-width:960px) {
     .buttons {
+        text-align: center;
+        display: block;
         background-color: #f0f0f0;
         user-select: none;
         padding: 5px;
@@ -40,6 +50,11 @@ a {
         font-family: ubuntu;
         margin: 10px 15px;
         transition: .5s;
+    }
+
+    .card {
+        text-align: center;
+        width: 315px;
     }
 }
 

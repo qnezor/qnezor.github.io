@@ -105,14 +105,3 @@ body {
 .card_links .link:hover {
     color: white;
 }
-
-
-@font-face {
-    font-family: 'Ubuntu';
-    src: url(files/fonts/Ubuntu.ttf);
-}
-
-@font-face {
-    font-family: 'PoiretOne';
-    src: url(files/fonts/Poiretone.ttf);
-}

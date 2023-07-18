@@ -31,6 +31,7 @@
 		font-size: 20px;
 		margin: 0px 10px;
 		transition: .5s;
+		white-space: nowrap;
 	}
 
 	a:hover {
@@ -46,14 +47,46 @@
 	.icon:hover {
 		transform: rotate(-25deg) scale(1.23);
 	}
+
+	@media screen and (orientation: landscape) {
+		.main {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.links {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+	}
+
+	@media screen and (orientation: portrait) {
+		.main {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+
+		.links {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			margin: 7px 0px;
+		}
+	}
 </style>
 
 <body>
 	<main style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100%;">
-		<div style="display: flex; align-items: center; justify-content: center;">
+		<div class="main">
 			<img src="files/pic/qnezor.png" style="width: 200px; border-radius: 10px;">
 
-			<div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+			<div class="links">
 				<div style="text-align: center;">
 					<a href="https://vk.com/qnezor" target="_blank"><img class="icon" src="files/icons/vk.png"></a>
 					<a href="https://youtube.com/@qnezor" target="_blank"><img class="icon"
@@ -68,7 +101,8 @@
 							src="files/icons/reddit.png"></a>
 				</div>
 				<div style="text-align: center;">
-					<a href="https://github.com/qnezor/rvc-ru_localization" target="_blank">RVC &#127479&#127482 Localization</a>
+					<a href="https://github.com/qnezor/rvc-ru_localization" target="_blank">RVC &#127479&#127482
+						Localization</a>
 					<a href="https://qnezor.github.io/aidt" target="_blank">AiDT</a>
 					<a href="https://github.com/qnezor/NecoArcBuddy-Chrome" target="_blank">NecoArcBuddy-Chrome</a>
 				</div>

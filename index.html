@@ -20,7 +20,7 @@
 	html,
 	body {
 		height: 100%;
-		background-color: #cccbcb;
+		background-color: #c3d7ac;
 		user-select: none;
 	}
 
@@ -47,6 +47,11 @@
 		transform: rotate(-25deg) scale(1.23);
 	}
 
+	mark {
+		background-color: rgba(255, 255, 255, 0);
+		font-family: notocoloremoji;
+	}
+
 	@media screen and (orientation: landscape) {
 		.main {
 			display: flex;
@@ -59,6 +64,10 @@
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
+		}
+
+		.div_links {
+			display: flex;
 		}
 	}
 
@@ -83,24 +92,30 @@
 <body>
 	<main style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100%;">
 		<div class="main">
-			<img src="files/pic/qnezor.png" style="width: 200px; border-radius: 100px; border: 2px dashed white;">
+			<img src="files/pic/qnezor.png" style="width: 200px; border-radius: 100px; border: 3px dashed white;">
 
 			<div class="links">
-				<div style="text-align: center;">
-					<a href="https://vk.com/qnezor" target="_blank"><img class="icon" src="files/icons/vk.png"></a>
-					<a href="https://youtube.com/@qnezor" target="_blank"><img class="icon"
-							src="files/icons/youtube.png"></a>
-					<a href="https://twitch.com/qnezor" target="_blank"><img class="icon"
-							src="files/icons/twitch.png"></a>
-					<a href="https://steamcommunity.com/id/qnezor" target="_blank"><img class="icon"
-							src="files/icons/steam.png"></a>
-					<a href="https://twitter.com/qnezor" target="_blank"><img class="icon"
-							src="files/icons/twitter.png"></a>
-					<a href="https://reddit.com/u/qnezor" target="_blank"><img class="icon"
-							src="files/icons/reddit.png"></a>
+				<div style="text-align: center;" class="div_links">
+					<div>
+						<a href="https://vk.com/qnezor" target="_blank"><img class="icon" src="files/icons/vk.png"></a>
+						<a href="https://youtube.com/@qnezor" target="_blank"><img class="icon"
+								src="files/icons/youtube.png"></a>
+						<a href="https://twitch.com/qnezor" target="_blank"><img class="icon"
+								src="files/icons/twitch.png"></a>
+					</div>
+					<div>
+						<a href="https://steamcommunity.com/id/qnezor" target="_blank"><img class="icon"
+								src="files/icons/steam.png"></a>
+
+						<a href="https://twitter.com/qnezor" target="_blank"><img class="icon"
+								src="files/icons/twitter.png"></a>
+						<a href="https://reddit.com/u/qnezor" target="_blank"><img class="icon"
+								src="files/icons/reddit.png"></a>
+					</div>
 				</div>
 				<div style="text-align: center;">
-					<a href="https://github.com/qnezor/rvc-ru_localization" target="_blank">RVC &#127479&#127482
+					<a href="https://github.com/qnezor/rvc-ru_localization" target="_blank">RVC
+						<mark>&#127479&#127482</mark>
 						Localization</a>
 					<a href="https://qnezor.github.io/aidt" target="_blank">AiDT</a>
 					<a href="https://github.com/qnezor/NecoArcBuddy-Chrome" target="_blank">NecoArcBuddy-Chrome</a>

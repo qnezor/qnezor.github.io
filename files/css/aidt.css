@@ -27,7 +27,7 @@ a {
         user-select: none;
         padding: 5px;
         font-size: 25px;
-        font-family: Ubuntu-Medium;
+        font-family: Ubuntu-Regular;
         margin: 0px 15px;
         transition: .5s;
     }
@@ -47,7 +47,7 @@ a {
         user-select: none;
         padding: 5px;
         font-size: 25px;
-        font-family: Ubuntu-Medium;
+        font-family: Ubuntu-Regular;
         margin: 10px 15px;
         transition: .5s;
     }

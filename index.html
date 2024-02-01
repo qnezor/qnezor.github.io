@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" sizes="192x192" href="files/pic/notqnezor.jpg">
-	<title>who?</title>
+	<title>qnezor</title>
 	<link rel="stylesheet" href="https://rizobyte.github.io/font-base/fonts.css">
 </head>
 
@@ -25,13 +25,22 @@
 	}
 
 	a {
-		color: white;
+		color: rgb(36, 173, 219);
 		text-decoration: none;
-		font-family: opensans-light;
 		font-size: 20px;
-		margin: 0px 10px;
 		transition: .7s;
 		white-space: nowrap;
+	}
+
+	h3 {
+		font-family: PixelifySans-Regular;
+		margin: 10px 10px;
+	}
+
+	h2 {
+		font-family: PixelifySans-Regular;
+		color: white;
+		margin: 10px 10px;
 	}
 
 	a:hover {
@@ -50,84 +59,37 @@
 
 	mark {
 		background-color: rgba(255, 255, 255, 0);
-		font-family: NotoEmoji;
-		color: white;
+		color: rgb(126, 185, 36);
 	}
 
 	@media screen and (orientation: landscape) {
-		.main {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
 		.links {
 			display: flex;
-			justify-content: center;
-			align-items: center;
 			flex-direction: column;
-		}
-
-		.div_links {
-			display: flex;
-		}
-
-		#info {
-			width: 500px;
-			margin-top: 17px
+			width: 50%;
 		}
 	}
 
 	@media screen and (orientation: portrait) {
-		.main {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-direction: column;
-		}
-
 		.links {
 			display: flex;
-			justify-content: center;
-			align-items: center;
 			flex-direction: column;
-			margin: 7px 0px;
-		}
-		
-		#info {
-			width: 300px;
-			margin-top: 17px
+			width: 100%;
 		}
 	}
 </style>
 
 <body>
 	<main style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100%;">
-		<div class="main">
-			<img src="files/pic/notqnezor.jpg" style="width: 180px; border-radius: 100px; border: 2.5px solid white;">
-
-			<div class="links">
-				<div style="text-align: center;" class="div_links">
-					<div>
-						<a href="https://reddit.com/u/qnezor" target="_blank"><img class="icon" src="files/icons/reddit.png"></a>
-						<a href="https://youtube.com/@qnezorshitpost" target="_blank"><img class="icon"
-								src="files/icons/youtube.png"></a>
-						<a href="https://steamcommunity.com/id/qnezor" target="_blank"><img class="icon"
-								src="files/icons/steam.png"></a>
-					</div>
-				</div>
-				<div style="text-align: center;">
-					<a href="https://github.com/qnezor/rvc-ru_localization" target="_blank">RVC
-						<mark>&#127479&#127482</mark>
-						Localization</a>
-					<a href="https://qnezor.github.io/aidt" target="_blank">AiDT</a>
-					<a href="https://github.com/qnezor/NecoArcBuddy-Chrome" target="_blank">NecoArcBuddy-Chrome</a>
-				</div>
-				<div style="text-align: center;">
-					<a href="https://rizobyte.github.io" target="_blank">rizobyte</a>
-					<a href="https://oguzki.github.io" target="_blank">oguzki corp.</a>
-				</div>
-			</div>
+		<div class="links">
+			<h2>hello, i'm <mark>qnezor</mark></h2>
+		</div>
+		<div class="links">
+			<h3><a href="https://ovk.to/qnezor">openvk</a></h3>
+			<h3><a href="https://civitai.com/user/qnezor">civitai</a></h3>
+			<h3><a href="https://huggingface.co/qnezor">huggingface</a></h3>
+			<h3><a href="https://reddit.com/u/qnezor">reddit</a></h3>
+			<h3><a href="https://vk.com/qnezor">vk</a></h3>
 		</div>
 	</main>
 </body>

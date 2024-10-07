@@ -20,11 +20,11 @@
 		white-space: nowrap;
 	}
 
-  h4 {
-    font-family: PixelifySans-Regular;
-		margin: 10px 20px;
-    color: rgb(36, 173, 219);
-  }
+	h4 {
+		font-family: PixelifySans-Regular;
+		margin: 10px 40px;
+		color: rgb(36, 173, 219);
+	}
 
 	h3 {
 		font-family: PixelifySans-Regular;

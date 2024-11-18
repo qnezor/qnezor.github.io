@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" sizes="192x192" href="files/img/notqnezor.jpg">
+	<link rel="icon" sizes="192x192" href="assets/images/notqnezor.jpg">
 	<title>qnezor</title>
 	<link rel="stylesheet" href="https://oguzki.github.io/font-base/fonts.css">
 </head>
@@ -30,6 +30,7 @@
 		font-size: 20px;
 		transition: .7s;
 		white-space: nowrap;
+		background-color: black;
 	}
 
 	h3 {
@@ -39,7 +40,6 @@
 
 	h2 {
 		font-family: PixelifySans-Regular;
-		color: white;
 		margin: 10px 10px;
 	}
 
@@ -47,7 +47,12 @@
 		color: #f467a2;
 	}
 
-	mark {
+	.hello {
+		background-color: black;
+		color: white;
+	}
+
+	.qn {
 		background-color: rgba(255, 255, 255, 0);
 		color: rgb(126, 185, 36);
 	}
@@ -58,8 +63,10 @@
 			flex-direction: column;
 			width: 50%;
 		}
-		.all {
+
+		#all {
 			max-height: 75%;
+			border-radius: 100%;
 		}
 	}
 
@@ -69,8 +76,10 @@
 			flex-direction: column;
 			width: 100%;
 		}
-		.all {
-			max-width: 90%
+
+		#all {
+			max-width: 90%;
+			border-radius: 100%;
 		}
 	}
 </style>
@@ -78,23 +87,47 @@
 <body>
 	<div
 		style="z-index: 0; position: fixed; height: 100%; width: 100%; display: flex; justify-content: center; align-items: center;">
-		<img src="assets/pictures/all3.png" class="all">
+		<img src="" id="all">
 	</div>
 	<main
 		style="display: flex; background-color: rgba(0, 0, 0, 0.459); justify-content: center; align-items: center; height: 100%; width: 100%; z-index: 2; position: fixed;">
 		<div class="links">
-			<h2>hello, i'm <mark>qnezor</mark></h2>
+			<h2><mark class="hello">hello, i'm <mark class="qn">qnezor</mark></mark></h2>
 			<h3><a href="https://steamcommunity.com/id/qnezor" target="_blank">steam</a></h3>
 			<h3><a href="https://ovk.to/qnezor" target="_blank">openvk</a></h3>
 			<h3><a href="https://civitai.com/user/qnezor" target="_blank">civitai</a></h3>
 			<h3><a href="https://huggingface.co/qnezor" target="_blank">huggingface</a></h3>
 			<h3><a href="https://reddit.com/u/qnezor" target="_blank">reddit</a></h3>
+			<h3><a href="https://mastodon.social/@qnezor" target="_blank">mastodon</a></h3>
+			<h3><a href="https://x.com/qnezor" target="_blank">twitter</a></h3>
 			<h3><a href="https://vk.com/qnezor" target="_blank">vk</a></h3>
 		</div>
 	</main>
 </body>
 
 <script>
+
+	var random = Math.floor(Math.random() * 5) + 1;
+	let image = document.getElementById('all');
+	switch (random) {
+		case 1:
+			image.src = "../assets/photo/ai.jpg";
+			break;
+		case 2:
+			image.src = "../assets/photo/cyber.jpeg";
+			break;
+		case 3:
+			image.src = "../assets/photo/notqnezor.jpg";
+			break;
+		case 4:
+			image.src = "../assets/photo/qnezor.png";
+			break;
+		case 5:
+			image.src = "../assets/photo/re.jpg";
+			break;
+
+	}
+
 </script>
 
 </html>

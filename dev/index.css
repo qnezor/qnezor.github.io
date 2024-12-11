@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: rgb(117, 0, 78);
+    user-select: none;
+}
+h3 {
+    font-family: PixelifySans-Regular;
+    margin: 10px 10px;
+}
+
+h2 {
+    font-family: PixelifySans-Regular;
+    margin: 10px 10px;
+}
+
+a:hover {
+    color: rgb(117, 0, 78);
+}
+
+a {
+    color: white;
+}
+
+.hello {
+    background-color: black;
+    color: white;
+}
+
+.qn {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(126, 185, 36);
+}
+
+@font-face {
+    font-family: ml;
+    src: url(font/mazeletter-path.ttf);
+}
+
+.background {
+    z-index: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100vh;
+    color: white;
+    font-family: ml;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}

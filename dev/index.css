@@ -11,15 +11,6 @@ body {
     background-color: rgb(117, 0, 78);
     user-select: none;
 }
-h3 {
-    font-family: PixelifySans-Regular;
-    margin: 10px 10px;
-}
-
-h2 {
-    font-family: PixelifySans-Regular;
-    margin: 10px 10px;
-}
 
 a:hover {
     color: rgb(117, 0, 78);
@@ -27,16 +18,9 @@ a:hover {
 
 a {
     color: white;
-}
-
-.hello {
-    background-color: black;
-    color: white;
-}
-
-.qn {
-    background-color: rgba(255, 255, 255, 0);
-    color: rgb(126, 185, 36);
+    font-family: pixelifysans-regular;
+    transition: .5s;
+    text-decoration: none;
 }
 
 @font-face {
@@ -63,4 +47,13 @@ a {
     align-items: center;
     flex-direction: column;
     background-color: black;
+    border-radius: 20px;
+    color: white;
+    height: 200px;
+    width: 300px;
+}
+
+.name {
+    font-size: 200%;
+    font-family: PixelifySans-Regular;
 }

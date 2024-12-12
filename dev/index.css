@@ -21,6 +21,7 @@ a {
     font-family: pixelifysans-regular;
     transition: .5s;
     text-decoration: none;
+    font-size: 120%;
 }
 
 @font-face {
@@ -41,7 +42,11 @@ a {
     font-family: ml;
 }
 
-.links {
+#background {
+    transition: 1s;
+}
+
+#links {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +54,7 @@ a {
     background-color: black;
     border-radius: 20px;
     color: white;
-    height: 200px;
+    height: 300px;
     width: 300px;
 }
 

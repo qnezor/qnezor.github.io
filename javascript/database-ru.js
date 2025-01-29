@@ -1,5 +1,5 @@
 export const config = {
-    postsDirectory: './blog/',
+    postsDirectory: 'https://qnezor.github.io/blog/',
     posts: [
         {
             file: '002-mad-father-nx-announcement-RU',

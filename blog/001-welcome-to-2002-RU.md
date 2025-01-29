@@ -8,7 +8,7 @@
 
 | <p style="text-align: center;">Мой логотип</p> | <p style="text-align: center;">Логотип метро</p> |
 |-|-|
-|<img src="/blog/images/001-final-logo.png" width="250px">|<img src="/blog/images/001-moscow-underground.gif" width="200px">|
+|<img src="https://qnezor.github.io/blog/images/001-final-logo.png" width="250px">|<img src="https://qnezor.github.io/blog/images/001-moscow-underground.gif" width="200px">|
 
 Так что создание логотипа было отложено. Было решено переделать сайт и убрать из него все возможные картинки, оставив только ник и ссылки.  
 Но, увы, долго данная версия сайта не продержалась, и спустя пару недель на сайте остался только никнейм, а я отправился в раздумья.

@@ -8,7 +8,7 @@ A month ago, I decided to create a logo to proudly display on the site and stop 
 
 | <p style="text-align: center;">My logo</p> | <p style="text-align: center;">Subway logo</p> |
 |-|-|
-|<img src="/blog/images/001-final-logo.png" width="250px">|<img src="/blog/images/001-moscow-underground.gif" width="200px">|
+|<img src="https://qnezor.github.io/blog/images/001-final-logo.png" width="250px">|<img src="https://qnezor.github.io/blog/images/001-moscow-underground.gif" width="200px">|
 
 So, I put the idea of creating a logo on hold. I decided to redesign the site, removing all possible images and leaving only my nickname and links.
 Unfortunately, this version of the site didn’t last long. After a couple of weeks, only my nickname remained, and I went back to brainstorming.

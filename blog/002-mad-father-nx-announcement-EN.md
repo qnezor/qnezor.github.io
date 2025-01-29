@@ -6,11 +6,15 @@
 ## Backstory
 Attempts to translate the Switch version began as far back as 2024, but unfortunately, due to bugs and a lack of interest from the Switch community, the translation project was shut down after just one day.
 
-<img src="https://qnezor.github.io/blog/images/002-bad-translate.jpg" style="text-align: center; width: 400px">
+<div style="display: flex; justify-content: center">
+<img src="https://qnezor.github.io/blog/images/002-bad-translate.jpg" style="width: 400px">
+</div>
 
 On January 2, 2025, a torrent for Mad Father for Nintendo Switch appeared on RuTracker.org. This suggests that interest in translating the game might rise. Right?
 
-<img src="https://qnezor.github.io/blog/images/002-tessenlee-message.png" style="text-align: center; width: 500px">
+<div style="display: flex; justify-content: center">
+<img src="https://qnezor.github.io/blog/images/002-tessenlee-message.png" style="width: 450px">
+</div>
 
 Well, I couldn’t find any announcements from other translators. That means the upcoming release of this translation will be yet another victory for Shunter (a joke only 5–10 people will understand).
 
@@ -18,7 +22,9 @@ Well, I couldn’t find any announcements from other translators. That means the
 The translation will be based on the work of RedKittens.
 As of January 12, 2025, a test build 1201 has already been compiled.
 
-<img src="https://qnezor.github.io/blog/images/002-good-translate.jpg" style="text-align: center; width: 400px">
+<div style="display: flex; justify-content: center">
+<img src="https://qnezor.github.io/blog/images/002-good-translate.jpg" style="width: 400px">
+</div>
 
 The release date has not been announced yet.
 

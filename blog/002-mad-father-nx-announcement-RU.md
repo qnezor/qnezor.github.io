@@ -6,11 +6,15 @@
 ## Предыстория
 Попытки перевода Switch-версии были начаты ещё в 2024 году, но, увы, из-за багов и отсутствия интереса со стороны Switch-комьюнити, производство перевода было закрыто спустя 1 день.
 
+<div style="display: flex; justify-content: center">
 <img src="https://qnezor.github.io/blog/images/002-bad-translate.jpg" style="text-align: center; width: 400px">
+</div>
 
 2 января 2025 года на RuTracker.org появилась раздача Mad Father для Nintendo Switch. А значит, что интерес к переводу данной игры может возрасти. Верно?
 
+<div style="display: flex; justify-content: center">
 <img src="https://qnezor.github.io/blog/images/002-tessenlee-message.png" style="text-align: center; width: 500px">
+</div>
 
 Ну, заявлений от других переводчиков я не нашёл. Это значит, что будущий релиз перевода будет очередной победой Шунтера (данную шутку поймут только 5–10 человек).
 
@@ -18,7 +22,9 @@
 Перевод будет основан на работе RedKittens.
 На момент 12 января 2025 года уже собран тестовый билд 1201.
 
+<div style="display: flex; justify-content: center">
 <img src="https://qnezor.github.io/blog/images/002-good-translate.jpg" style="text-align: center; width: 400px">
+</div>
 
 Дата релиза пока не объявлена.
 

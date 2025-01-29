@@ -2,6 +2,12 @@ export const config = {
     postsDirectory: 'https://qnezor.github.io/blog/',
     posts: [
         {
+            file: '003-mad-father-nx-release-RU',
+            title: 'Релиз русификатора Mad Father для Nintendo Switch',
+            date: '29/01/2025',
+            subtitle: 'Пост о релизе спустя сутки',
+        },
+        {
             file: '002-mad-father-nx-announcement-RU',
             title: 'Анонс русификатора Mad Father для Nintendo Switch',
             date: '12/01/2025',
